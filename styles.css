@@ -2,7 +2,7 @@ body {
     background-color: powderblue;
 }
 
-img {
+.centre {
   width: 20%;
   height: 20%;
   min-height: 200px;
@@ -12,6 +12,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 7%;
+}
+
+#name {
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .line {
@@ -24,4 +32,16 @@ img {
   margin-right: auto;
   margin-top: 2%;
   background-color: white;
+}
+
+.icon {
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 7%;
+  height: 7%;
+  margin-top: 1%;
+}
+
+#linkedin {
+  margin-left: 65%;
 }
