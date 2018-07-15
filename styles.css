@@ -5,8 +5,22 @@ body {
 img {
   width: 20%;
   height: 20%;
+  min-height: 200px;
+  min-width: 200px;
   border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 7%;
+}
+
+.line {
+  height: 5px;
+  width: 100px;
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  background-color: white;
 }
