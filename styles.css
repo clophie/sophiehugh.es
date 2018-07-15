@@ -63,6 +63,12 @@ body {
   min-height: 10%;
 }
 
+.icon:hover {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
 .icons {
   display: flex;
   justify-content: space-between;
