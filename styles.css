@@ -78,3 +78,7 @@ a {
   margin-left: 20%;
   margin-right: 15%;
 }
+
+#aboutTxt {
+  display: none;
+}
