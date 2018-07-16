@@ -13,10 +13,18 @@ var widthPro = textPro.clientWidth;
 console.log(widthPro + 'x' + heightPro);
 textPro.style.height = heightPro + 'px';
 textPro.style.width = widthPro + 'px';
+textPro.style.visibility = 'hidden';
+textPro.style.height = '0';
+textPro.style.width = '0';
+textPro.style.padding = '0';
+textAbt.style.visibility = 'hidden';
+textAbt.style.height = '0';
+textAbt.style.width = '0';
+textAbt.style.padding = '0';
 
 btnAbt.addEventListener('click', function() {
-  if(textAbt.style.visibility == 'hidden') {
-    if(textPro.style.visibility !== 'hidden') {
+  if (textAbt.style.visibility == 'hidden') {
+    if (textPro.style.visibility !== 'hidden') {
       textPro.style.visibility = 'hidden';
       textPro.style.height = '0';
       textPro.style.width = '0';
@@ -35,8 +43,8 @@ btnAbt.addEventListener('click', function() {
 });
 
 btnPro.addEventListener('click', function() {
-  if(textPro.style.visibility == 'hidden') {
-    if(textAbt.style.visibility !== 'hidden') {
+  if (textPro.style.visibility == 'hidden') {
+    if (textAbt.style.visibility !== 'hidden') {
       textAbt.style.visibility = 'hidden';
       textAbt.style.height = '0';
       textAbt.style.width = '0';
@@ -49,32 +57,30 @@ btnPro.addEventListener('click', function() {
   } else {
     textPro.style.visibility = 'hidden';
     textPro.style.height = '0';
-    textPro.style.width = '0';
-    textPro.style.padding = '0';
-  }
+    textPro.style.width = '0';  }
 });
 
 function mouseOut() {
-  document.getElementById('name').innerHTML  = 'Sophie Hughes';
+  document.getElementById('name').innerHTML = 'Sophie Hughes';
   document.getElementById('name').style.fontWeight = 'normal';
 }
 
 function abtHover() {
-  document.getElementById('name').innerHTML  = 'About Me';
+  document.getElementById('name').innerHTML = 'About Me';
   document.getElementById('name').style.fontWeight = 'bold';
 }
 
 function proHover() {
-  document.getElementById('name').innerHTML  = 'Projects';
+  document.getElementById('name').innerHTML = 'Projects';
   document.getElementById('name').style.fontWeight = 'bold';
 }
 
 function gitHover() {
-  document.getElementById('name').innerHTML  = 'GitHub';
+  document.getElementById('name').innerHTML = 'GitHub';
   document.getElementById('name').style.fontWeight = 'bold';
 }
 
 function linHover() {
-  document.getElementById('name').innerHTML  = 'LinkedIn';
+  document.getElementById('name').innerHTML = 'LinkedIn';
   document.getElementById('name').style.fontWeight = 'bold';
 }
