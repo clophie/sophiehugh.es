@@ -53,3 +53,13 @@ btnPro.addEventListener('click', function() {
     textPro.style.padding = '0';
   }
 });
+
+function mouseOut() {
+  document.getElementById('name').innerHTML  = 'Sophie Hughes';
+  document.getElementById('name').style.fontWeight = 'normal';
+}
+
+function abtHover() {
+  document.getElementById('name').innerHTML  = 'About Me';
+  document.getElementById('name').style.fontWeight = 'bold';
+}
