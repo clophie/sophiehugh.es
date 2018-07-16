@@ -22,7 +22,11 @@ textAbt.style.height = '0';
 textAbt.style.width = '0';
 textAbt.style.padding = '0';
 
-btnAbt.addEventListener('click', function() {
+function addListenerMulti(el, s, fn) {
+  s.split(' ').forEach(e => el.addEventListener(e, fn, false));
+}
+
+addListenerMulti(btnAbt, 'click touchstart', function () {
   if (textAbt.style.visibility == 'hidden') {
     if (textPro.style.visibility !== 'hidden') {
       textPro.style.visibility = 'hidden';
@@ -42,45 +46,7 @@ btnAbt.addEventListener('click', function() {
   }
 });
 
-btnAbt.addEventListener('touchstart', function() {
-  if (textAbt.style.visibility == 'hidden') {
-    if (textPro.style.visibility !== 'hidden') {
-      textPro.style.visibility = 'hidden';
-      textPro.style.height = '0';
-      textPro.style.width = '0';
-      textPro.style.padding = '0';
-    }
-    textAbt.style.visibility = 'visible';
-    textAbt.style.height = heightAbt + 'px';
-    textAbt.style.width = widthAbt + 'px';
-    textAbt.style.padding = '.5em';
-  } else {
-    textAbt.style.visibility = 'hidden';
-    textAbt.style.height = '0';
-    textAbt.style.width = '0';
-    textAbt.style.padding = '0';
-  }
-});
-
-btnPro.addEventListener('click', function() {
-  if (textPro.style.visibility == 'hidden') {
-    if (textAbt.style.visibility !== 'hidden') {
-      textAbt.style.visibility = 'hidden';
-      textAbt.style.height = '0';
-      textAbt.style.width = '0';
-      textAbt.style.padding = '0';
-    }
-    textPro.style.visibility = 'visible';
-    textPro.style.height = heightPro + 'px';
-    textPro.style.width = widthPro + 'px';
-    textPro.style.padding = '.5em';
-  } else {
-    textPro.style.visibility = 'hidden';
-    textPro.style.height = '0';
-    textPro.style.width = '0';  }
-});
-
-btnPro.addEventListener('touchstart', function() {
+addListenerMulti(btnPro, 'click touchstart', function () {
   if (textPro.style.visibility == 'hidden') {
     if (textAbt.style.visibility !== 'hidden') {
       textAbt.style.visibility = 'hidden';
