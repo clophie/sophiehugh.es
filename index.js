@@ -22,11 +22,14 @@ textAbt.style.height = '0';
 textAbt.style.width = '0';
 textAbt.style.padding = '0';
 
-function addListenerMulti(el, s, fn) {
-  s.split(' ').forEach(e => el.addEventListener(e, fn, false));
-}
+var clickEvent = (function() {
+  if ('ontouchstart' in document.documentElement === true)
+    return 'touchstart';
+  else
+    return 'click';
+})();
 
-addListenerMulti(btnAbt, 'click touchstart', function () {
+btnAbt.addEventListener(clickEvent, function () {
   if (textAbt.style.visibility == 'hidden') {
     if (textPro.style.visibility !== 'hidden') {
       textPro.style.visibility = 'hidden';
@@ -46,7 +49,7 @@ addListenerMulti(btnAbt, 'click touchstart', function () {
   }
 });
 
-addListenerMulti(btnPro, 'click touchstart', function () {
+btnPro.addEventListener(clickEvent, function () {
   if (textPro.style.visibility == 'hidden') {
     if (textAbt.style.visibility !== 'hidden') {
       textAbt.style.visibility = 'hidden';
@@ -63,6 +66,8 @@ addListenerMulti(btnPro, 'click touchstart', function () {
     textPro.style.height = '0';
     textPro.style.width = '0';  }
 });
+
+
 
 function mouseOut() {
   document.getElementById('name').innerHTML = 'Sophie Hughes';
