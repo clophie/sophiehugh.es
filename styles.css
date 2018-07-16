@@ -147,10 +147,12 @@ tr:nth-child(even) {
 @media only screen and (max-width 1000px) {
   #aboutTxt {
     width: 90%;
+    visibility: hidden;
   }
 
   #projectsTxt {
     width: 90%;
+    visibility: hidden;
   }
 }
 
