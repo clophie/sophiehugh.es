@@ -87,11 +87,21 @@ a {
  width: 50%;
  margin: auto;
  color: #6E8C90;
+ font-size: 110%;
  font-family: Verdana, Geneva, sans-serif;
  transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 
 }
 
 #projectsTxt {
-  display: none;
+  visibility: hidden;
+  padding: .5em;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 50%;
+  margin: auto;
+  color: #6E8C90;
+  font-size: 110%;
+  font-family: Verdana, Geneva, sans-serif;
+  transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
