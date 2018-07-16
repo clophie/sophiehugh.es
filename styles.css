@@ -105,3 +105,16 @@ a {
   font-family: Verdana, Geneva, sans-serif;
   transition: height 1s, width 1s, padding 1s, visibility 1s, opacity 0.5s ease-out;
 }
+
+table, th, td {
+  font-size: 95%;
+  font-weight: normal;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+.header {
+  font-weight: bold;
+}
