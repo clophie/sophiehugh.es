@@ -63,3 +63,18 @@ function abtHover() {
   document.getElementById('name').innerHTML  = 'About Me';
   document.getElementById('name').style.fontWeight = 'bold';
 }
+
+function proHover() {
+  document.getElementById('name').innerHTML  = 'Projects';
+  document.getElementById('name').style.fontWeight = 'bold';
+}
+
+function gitHover() {
+  document.getElementById('name').innerHTML  = 'GitHub';
+  document.getElementById('name').style.fontWeight = 'bold';
+}
+
+function linHover() {
+  document.getElementById('name').innerHTML  = 'LinkedIn';
+  document.getElementById('name').style.fontWeight = 'bold';
+}
