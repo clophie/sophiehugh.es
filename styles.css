@@ -10,10 +10,7 @@ body {
   min-width: 200px;
   border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4%;
-  margin-bottom: 1%;
+  margin: 4% auto 1%;
   border-style: double;
   border-color: white;
 }
@@ -44,10 +41,7 @@ body {
   width: 95%;
   border-radius: 20%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2%;
-  margin-bottom: 1%;
+  margin: 2% auto 1%;
   background-color: white;
   box-shadow: 2px 2px #9ec9cf;
 }
