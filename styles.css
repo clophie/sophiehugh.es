@@ -64,6 +64,7 @@ a {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   transform: scale(0.9);
+  cursor: pointer;
 }
 
 .icons {
@@ -74,7 +75,6 @@ a {
 }
 
 #aboutTxt {
- visibility: hidden;
  padding: .5em;
  box-sizing: border-box;
  overflow: hidden;
@@ -88,7 +88,6 @@ a {
 }
 
 #projectsTxt {
-  visibility: hidden;
   padding: .5em;
   box-sizing: border-box;
   overflow: hidden;
@@ -155,12 +154,10 @@ img:hover{
 @media only screen and (max-width: 1000px) {
   #aboutTxt {
     width: 90%;
-    visibility: hidden;
   }
 
   #projectsTxt {
     width: 90%;
-    visibility: hidden;
   }
 }
 

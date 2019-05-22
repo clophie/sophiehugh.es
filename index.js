@@ -5,16 +5,6 @@ var clickEvent = (function() {
     return 'click';
 })();
 
-$('aboutTxt').on('show.bs.collapse', function () {
-  $('projectsTxt').collapse('hide');
-});
-
-$('projectsTxt').on('show.bs.collapse', function () {
-  $('aboutTxt').collapse('hide');
-});
-
-$("#name").fitText(1.0, {minFontSize: '40px'});
-
 function mouseOut() {
   document.getElementById('name').innerHTML = 'Sophie Hughes';
   document.getElementById('name').style.fontWeight = 'normal';
@@ -39,3 +29,27 @@ function linHover() {
   document.getElementById('name').innerHTML = 'LinkedIn';
   document.getElementById('name').style.fontWeight = 'bold';
 }
+
+$(document).ready(function() {
+  const aboutTxt = $('#aboutTxt');
+  const projectTxt = $('#projectsTxt');
+
+  aboutTxt.on('click', function () {
+    alert('hello');
+    aboutTxt.collapse('toggle');
+  });
+
+  aboutTxt.on('show.bs.collapse', function () {
+    projectTxt.collapse('hide');
+  });
+
+  projectTxt.on('click', function () {
+    projectTxt.collapse('toggle');
+  });
+
+  projectTxt.on('show.bs.collapse', function () {
+    aboutTxt.collapse('hide');
+  });
+
+  $("#name").fitText(1.0, {maxFontSize: '60px', minFontSize: '40px'});
+});
