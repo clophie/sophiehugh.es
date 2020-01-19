@@ -2,7 +2,6 @@ var btnAbt = document.getElementById('about');
 var textAbt = document.getElementById('aboutTxt');
 var heightAbt = textAbt.clientHeight;
 var widthAbt = textAbt.clientWidth;
-console.log(widthAbt + 'x' + heightAbt);
 textAbt.style.height = heightAbt + 'px';
 textAbt.style.width = widthAbt + 'px';
 
@@ -10,7 +9,6 @@ var btnPro = document.getElementById('projects');
 var textPro = document.getElementById('projectsTxt');
 var heightPro = textPro.clientHeight;
 var widthPro = textPro.clientWidth;
-console.log(widthPro + 'x' + heightPro);
 textPro.style.height = heightPro + 'px';
 textPro.style.width = widthPro + 'px';
 textPro.style.visibility = 'hidden';
