@@ -1,2 +1,7 @@
 # sophiehugh.es
-This is a website to host stuff about me, projects I am or have been working on, links to my social media and linkedin etc!
+This is a website I made to brush up on some basic HTML/CCS/JS skills and to serve as a personal portfolio website.
+
+You can view this site at the following link:
+https://clophie.github.io/sophiehugh.es/
+
+An updated version of my portfolio site can be found at https://sophiehughes.dev/
